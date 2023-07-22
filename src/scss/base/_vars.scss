@@ -1,0 +1,28 @@
+:root {
+	--container-width: 1300px;
+	--container-padding: 10px;
+
+	--font-main: 'Poppins', sans-serif;
+	--font-accent: 'Playfair Display', serif;
+  --Montserrat-Regular-400: 'Montserrat-Regular', sans-serif;
+  --Montserrat-Medium-500: 'Montserrat-Medium', sans-serif;
+  --Montserrat-SemiBold-600: 'Montserrat-SemiBold', sans-serif;
+  --Montserrat-Bold-700: 'Montserrat-Bold', sans-serif;
+  --Montserrat-ExtraBold-800: 'Montserrat-ExtraBold', sans-serif;
+
+	--page-bg: #fff;
+  --btn-bg: #037E8C;
+	--text-color: #000;
+	--accent: #ac182c;
+  --nav-color: #fff;
+
+  --laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+    --page-bg: #252526;
+    --text-color: #fff;
+}
+

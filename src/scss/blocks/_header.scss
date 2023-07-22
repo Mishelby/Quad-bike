@@ -1,0 +1,108 @@
+.header {
+  height: 918px;
+  width: 100%;
+  background-image: url(../../img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 50px;
+  }
+  &__menu {
+    display: flex;
+  }
+  &__list {
+    & + .header__list {
+      margin-left: 30px;
+    }
+  }
+  &__link {
+    color: var(--nav-color);
+    transition: all 0.3s;
+    font-family: var(--Montserrat-SemiBold-600);
+    &:hover {
+      color: #037e8c;
+    }
+  }
+  &__number {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__phone {
+    position: relative;
+    padding-left: 30px;
+    font-family: var(--Montserrat-SemiBold-600);
+    font-size: 20px;
+    color: var(--nav-color);
+    margin-bottom: 11px;
+    line-height: 104%;
+    &::before {
+      content: "";
+      background-image: url(../../img/phone.svg);
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__number-link {
+    padding: 12px 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: var(--nav-color);
+    font-family: var(--Montserrat-SemiBold-600);
+    font-size: 14px;
+    line-height: 104%;
+    border-radius: 9px;
+  }
+  &__menu,
+  &__number {
+    padding-top: 28px;
+  }
+  &__content {
+    height: calc(918px - 142px);
+    padding-top: 60px;
+  }
+  &__title {
+    font-size: 70px;
+    color: var(--nav-color);
+    font-family: var(--Montserrat-ExtraBold-800);
+    max-width: 595px;
+    margin-bottom: 37px;
+    letter-spacing: 3.15px;
+  }
+  &__subtitle {
+    color: var(--nav-color);
+    font-size: 24px;
+    font-family: var(--Montserrat-Medium-500);
+    line-height: 108%;
+    margin-bottom: 82px;
+  }
+  &__content-link{
+    padding: 20px 75px 20px 23px;
+    background-color: var(--btn-bg);
+    border-radius: 9px;
+    color: var(--nav-color);
+    font-size: 16px;
+    font-family: var(--Montserrat-SemiBold-600);
+    display: inline-block;
+    position: relative;
+    line-height: 108%;
+    &::before{
+      content: '';
+      background-image: url(../../img/arrow.svg);
+      position: absolute;
+      width: 31px;
+      height: 31px;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
