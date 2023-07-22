@@ -1,0 +1,51 @@
+.benifits {
+  padding: 47px 0 27px;
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 302px;
+    padding-top: 66px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 58px;
+      height: 45px;
+      top: 0;
+    }
+  }
+  &__item-wooden::before {
+    content: "";
+    background-image: url(../../img/benifits/1.svg);
+  }
+  &__item-moto::before {
+    content: "";
+    width: 61px;
+    background-image: url(../../img/benifits/2.svg);
+  }
+  &__item-helmet::before {
+    content: "";
+    width: 53px;
+    background-image: url(../../img/benifits/3.svg);
+  }
+  &__item-inspector::before {
+    content: "";
+    width: 60px;
+    background-image: url(../../img/benifits/4.svg);
+  }
+
+  &__title {
+    font-size: 18px;
+    font-family: var(--Montserrat-SemiBold-600);
+    margin-bottom: 20px;
+    color: #121214;
+  }
+  &__text {
+    font-size: 16px;
+    font-family: var(--Montserrat-SemiBold-400);
+    line-height: 130%;
+    max-width: 270px;
+  }
+}
